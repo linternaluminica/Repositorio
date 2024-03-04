@@ -1,0 +1,65 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Ejercicio de repeticion</h1>
+    <script>
+        var dato=10;
+        var limite=parseInt(prompt("Dame el limite"))
+        var multi=parseInt(prompt("Dame el multiplo"))
+       
+        /*while(dato<=limite){
+        document.write(dato,"<br>");
+        dato = dato + 1;
+        }*/
+
+        document.write("<table border=1>")
+        while(dato<=limite){
+        document.write("<tr>","<td>",multi,"*",dato,"=","</td>","<td>",multi*dato,"</td>","</tr>");
+        dato = dato + 1;
+        }
+
+        document.write("</table>")
+        
+        /*while(dato>=0){
+        document.write(dato,"<br>");
+        dato = dato - 1;
+        }*/
+
+        /*var mini;
+        var max;
+        mini=parseInt(prompt("Dame el minimo"));
+        max=parseInt(prompt("Dame el maximo"));
+        var i=mini;
+
+        while(i<=max){
+        document.write(i,"<br>");
+        i = i + 1;
+        }*/
+
+        /*var palabra=prompt("Dame la primera palabra");
+        i=0
+        
+        document.write("<table border=1>")
+
+        while(i<=palabra.length){
+            
+        document.write("<tr>","<td>",palabra.charAt(i),"</td>","</tr>");
+        i = i + 1;
+        }
+
+        document.write("</table>")
+
+        document.write("<ul>")
+
+        while(i<=palabra.length){
+            
+            document.write("<li>",palabra.charAt(i),"</li>",);
+            i = i + 1;
+            }
+
+            document.write("</ul>")*/
+        
+    </script>
+</body>
+</html>

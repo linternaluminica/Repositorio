@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Vector</h1>
+    <script>
+        v=[5,8,2,1]
+        n=["Ana","Pepe","Luis","Aitana"]
+        i=0
+        media=0
+        
+        while(i<v.length){
+            media=media+v[i]
+            i = i + 1
+        }
+        document.write(media/v.length)
+    </script>
+</body>
+</html>

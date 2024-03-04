@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Galeria</h1>
+    <script>
+        function GaleriaHOR(){
+        var dato
+
+        document.write("<table border=1>","<tr>")
+            dato=0
+        while(dato<3){
+        document.write("<td>","<img src=baixa.png>","</td>");
+        dato = dato + 1;
+        }
+
+        document.write("</tr>","</table>")
+    }
+    </script>
+
+<script>
+    function GaleriaVER(){
+    var dato
+
+    document.write("<table border=1>")
+        dato=0
+    while(dato<3){
+    document.write("<tr><td><img src=baixa.png></td></tr>");
+    dato = dato + 1;
+    }
+
+    document.write("</table>")}
+
+    function principal(){
+    var opcion=document.getElementById("seleccion").value;
+    if( opcion=="Vertical"){
+        GaleriaVER()
+    }
+    else{
+        GaleriaHOR()
+    }
+}
+</script>
+<select id="seleccion" onchange="principal()">
+<option>Seleccionar</option>
+<option>Horizontal</option>
+<option>Vertical</option>
+</select>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Tabla de multiplicar del 1 al 10</h1>
+    <script>
+        function tablaMultiplicar(){
+        var dato=1;
+        var multi=1
+
+        document.write("<table border=1>")
+        while(dato<=10){
+        document.write("<tr>","<td>",multi,"*",dato,"=","</td>","<td>",multi*dato,"</td>","</tr>");
+        dato = dato + 1;
+        }
+
+        document.write("</table>")}
+    </script>
+    <script>
+        function Principal(){
+        while(multi<100){
+            tablaMultiplicar(multi)
+            multi = multi + 1
+        }
+    }
+    </script>
+    <script>
+        Principal()
+    </script>
+</body>
+</html>

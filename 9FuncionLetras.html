@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Coger datos de un formulario</h1>
+    <script>
+        function Letras(){
+
+        var dato1;
+        var  i
+        i=0
+        dato1=document.getElementById("texto").value;
+        
+        while(i<=dato1.length){
+            
+            document.write(dato1.charAt(i)," ",);
+            i = i + 1;
+            }
+        }
+    </script>
+
+    <input type="text" id="texto" size="10">
+    <input type="button" onclick="Letras()" value="LETRAS">
+
+</body>
+</html>          

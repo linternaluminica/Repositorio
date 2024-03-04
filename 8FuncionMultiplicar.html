@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+        function tablaMultiplicar(){
+        var dato=1;
+        var multi=parseInt(prompt("Dame el multiplo"))
+
+        document.write("<table border=1>")
+        while(dato<=10){
+        document.write("<tr>","<td>",multi,"*",dato,"=","</td>","<td>",multi*dato,"</td>","</tr>");
+        dato = dato + 1;
+        }
+
+        document.write("</table>")}
+    </script>
+
+    <script>
+        tablaMultiplicar()
+    </script>
+
+    <script>
+        dato=0
+        while(dato<10){
+            tablaMultiplicar()
+            dato=dato+1
+        }
+    </script>
+</body>
+</html>
